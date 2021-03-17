@@ -40,7 +40,7 @@ svm_model= pickle.load(clf)
 
 
 cap=cv2.VideoCapture('family_crossing.mp4')
-
+#Reading from Videos
 while True:
     ret, frame = cap.read()
     image = imutils.resize(frame, width = min(400, frame.shape[1]))
